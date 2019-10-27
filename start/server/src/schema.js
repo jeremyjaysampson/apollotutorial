@@ -65,6 +65,7 @@ const typeDefs = gql`
     cancelTrip(launchId: ID!): TripUpdateResponse!
 
     login(email: String): String # login token
+    missionPatch(mission: String, size: PatchSize): String
   }
 
   type TripUpdateResponse {
